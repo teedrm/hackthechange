@@ -1,5 +1,6 @@
 import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
 import React, { useState } from 'react';
+import Confetti from 'react-dom-confetti';
 import { useNavigate } from 'react-router-dom';
 
 const SignIn = () => {
@@ -9,11 +10,11 @@ const SignIn = () => {
     // function DonationForm() {
     //     const [donationAmount, setDonationAmount] = useState('');
     //     const [customAmount, setCustomAmount] = useState('');
-    
+
     //     const handleAmountChange = (event) => {
     //         const value = event.target.value;
     //         setDonationAmount(value);
-    
+
     //         if (value !== 'Other') {
     //             setCustomAmount('');
     //         }
@@ -25,6 +26,16 @@ const SignIn = () => {
     //     setCustomAmount(value);
     //     setDonationAmount(value);
     // };
+
+    const [isConfettiActive, setConfettiActive] = useState(false);
+
+    const handleConfetti = () => {
+        setConfettiActive(true);
+        setTimeout(() => {
+            setConfettiActive(false);
+            navigate('/thankyou');
+        }, 2000);
+    };
 
     return (
         <div>
@@ -43,7 +54,7 @@ const SignIn = () => {
                         <input type='text' className='input1' />
                     </label>
                     <label style={{ display: 'flex', flexDirection: 'column', }}>
-                        <p style={{fontWeight:'600'}}>Where do you want to place your tree?</p>
+                        <p style={{ fontWeight: '600' }}>Where do you want to place your tree?</p>
                         Enter your address
                         <input type='text' className='input1' />
                     </label>
@@ -109,7 +120,10 @@ const SignIn = () => {
                     </div>
                 </div>
 
-                <button className='submit-btn' onClick={() => navigate('/thankyou')} >Submit</button>
+                <button className='submit-btn' onClick={handleConfetti}>
+                    Submit
+                </button>
+                <Confetti active={isConfettiActive} config={{ spread: 360, elementCount: 200 }} />
             </div>
         </div>
     );
