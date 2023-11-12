@@ -57,6 +57,17 @@ const SignIn = () => {
                         <p style={{ fontWeight: '600' }}>Where do you want to place your tree?</p>
                         Enter your address
                         <input type='text' className='input1' />
+                        OR
+                        <div style={{display:'flex', flexDirection:'row',marginBottom:'20px', marginTop:'10px' }}>
+                            <label style={{ display: 'flex', flexDirection: 'column' }}>
+                             
+                                <input type='text' className='input4' placeholder='Longtitude'/>
+                            </label>
+                            <label style={{ display: 'flex', flexDirection: 'column' }}>
+                           
+                                <input type='text' className='input4'style={{marginLeft:'10px'}} placeholder='Latitude'/>
+                            </label>
+                        </div>
                     </label>
 
                     <label style={{ display: 'flex', flexDirection: 'column', }}>

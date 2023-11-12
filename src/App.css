@@ -125,7 +125,12 @@
     border: 1px solid black;
     margin-left: 10px;
   }
-.input1, .input2, .input3[type="text"] {
+    .input4 {
+    width: 35vw;
+    height: 4vh;
+    border: 1px solid black;
+  }
+.input1, .input2, .input3, .input4[type="text"][type="text"] {
   font-size: 1rem;
   font-weight: 100;
 }
@@ -255,7 +260,7 @@
     border: 1px solid black;
     margin-left: 10px;
   }
-.input1, .input2, .input3[type="text"] {
+.input1, .input2, .input3, .input4[type="text"] {
   font-size: 1rem;
   font-weight: 100;
 }
