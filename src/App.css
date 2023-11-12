@@ -233,4 +233,30 @@
   .donate-btn:active {
     transform: scale(0.95);
   }
+    .input1, .input2, .input3 {
+    border: none;
+  }
+
+  .input1 {
+    width: 85vw;
+    height: 4vh;
+     border: 1px solid black;
+     margin-bottom: 20px;
+  }
+
+  .input2 {
+    width: 55vw;
+    height: 4vh;
+    border: 1px solid black;
+  }
+   .input3 {
+    width: 25vw;
+    height: 4vh;
+    border: 1px solid black;
+    margin-left: 10px;
+  }
+.input1, .input2, .input3[type="text"] {
+  font-size: 1rem;
+  font-weight: 100;
+}
 }
