@@ -58,7 +58,7 @@
     border-radius: 50%;
     background-color: transparent;
     content: "";
-    top: 58.2%;
+    top: 489px;
     left: 50%;
     transform: translate(-50%, -50%);
     pointer-events: none;
@@ -87,7 +87,7 @@
     padding-top: 5px;
   }
   .donate2-btn {
-    width: 50vw;
+    width: 55vw;
     height: 5vh;
     border: black solid 2px;
     box-shadow: 4px 4px 0px 0px #000000;
@@ -189,7 +189,7 @@
     border-radius: 50%;
     background-color: transparent;
     content: "";
-    top: 52.2%;
+    top: 471px;
     left: 50%;
     transform: translate(-50%, -50%);
     pointer-events: none;
@@ -218,7 +218,7 @@
     padding-top: 5px;
   }
   .donate2-btn {
-    width: 50vw;
+    width: 55vw;
     height: 5vh;
     border: black solid 2px;
     box-shadow: 4px 4px 0px 0px #000000;
