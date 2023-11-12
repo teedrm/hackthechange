@@ -1,6 +1,3 @@
-import Filter1Icon from '@mui/icons-material/Filter1';
-import Filter2Icon from '@mui/icons-material/Filter2';
-import Filter3Icon from '@mui/icons-material/Filter3';
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import './App.css';
@@ -27,6 +24,15 @@ function Homepage() {
         {/* Transparent Circle with Black Border */}
         <div className='transparent-circle'></div>
       </div>
+      <div style={{ width:'110vw', marginLeft:"-42px", marginTop:"50px", display:'flex', flexDirection:' column', alignItems:'center', borderTop:'solid white 1px'}}>
+        <button style={{ background: 'none', borderTop: '2px solid black', borderBottom: '2px solid black', borderLeft: 'none', borderRight: 'none', marginTop:'20px', fontSize:' 1.3rem' }}>Partnerships</button>
+        <div className='collabs' style={{ marginTop: "50px", marginBottom: '50px' }}>
+          <img src='/OTP.png' alt='leaf' style={{ width: '80px',  }} />
+          <img src='/TFL.png' alt='leaf' style={{ width: '80px', marginLeft: '30px' }} />
+          <img src='/ITF.png' alt='leaf' style={{ width: '80px', marginLeft: '30px' }} />
+        </div>
+      </div>
+
     </div>
   );
 }
