@@ -43,6 +43,12 @@ const SignIn = () => {
                         <input type='text' className='input1' />
                     </label>
                     <label style={{ display: 'flex', flexDirection: 'column', }}>
+                        <p style={{fontWeight:'600'}}>Where do you want to place your tree?</p>
+                        Enter your address
+                        <input type='text' className='input1' />
+                    </label>
+
+                    <label style={{ display: 'flex', flexDirection: 'column', }}>
                         Enter payment
                         <input type='text' inputMode="numeric" className='input1' />
                     </label>
