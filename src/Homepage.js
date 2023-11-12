@@ -1,3 +1,6 @@
+import Filter1Icon from '@mui/icons-material/Filter1';
+import Filter2Icon from '@mui/icons-material/Filter2';
+import Filter3Icon from '@mui/icons-material/Filter3';
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import './App.css';
@@ -19,12 +22,11 @@ function Homepage() {
 
       <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
         <img src='/123.gif' alt='plant' style={{ width: '300px', }} />
-        <button className='donate-btn'onClick={()=> navigate('/donate')} >DONATE</button>
+        <button className='donate-btn' onClick={() => navigate('/donate')} >DONATE</button>
 
         {/* Transparent Circle with Black Border */}
         <div className='transparent-circle'></div>
       </div>
-
     </div>
   );
 }
