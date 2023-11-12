@@ -189,8 +189,8 @@
     border-radius: 50%;
     background-color: transparent;
     content: "";
-    top: 471px;
-    left: 50%;
+    top: 473px;
+    left: 49%;
     transform: translate(-50%, -50%);
     pointer-events: none;
   }
