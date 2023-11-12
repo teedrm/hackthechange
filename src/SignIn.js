@@ -6,6 +6,26 @@ const SignIn = () => {
     const navigate = useNavigate();
     const [donationAmount, setDonationAmount] = useState('');
 
+    // function DonationForm() {
+    //     const [donationAmount, setDonationAmount] = useState('');
+    //     const [customAmount, setCustomAmount] = useState('');
+    
+    //     const handleAmountChange = (event) => {
+    //         const value = event.target.value;
+    //         setDonationAmount(value);
+    
+    //         if (value !== 'Other') {
+    //             setCustomAmount('');
+    //         }
+    //     };
+    // }
+
+    // const handleCustomAmountChange = (event) => {
+    //     const value = event.target.value;
+    //     setCustomAmount(value);
+    //     setDonationAmount(value);
+    // };
+
     return (
         <div>
             <ArrowBackIosIcon style={{ marginTop: '10px', marginLeft: '10px' }} onClick={() => navigate('/')} />
@@ -65,15 +85,16 @@ const SignIn = () => {
                                     onChange={() => setDonationAmount('$10')}
                                 /> $10
                             </label>
-                            <label style={{ marginLeft: '10px' }}>
+                            <label for="amount" style={{ marginLeft: '10px' }}>
                                 <input
                                     type="radio"
                                     name="donationAmount"
                                     value="Other"
-                                    checked={donationAmount === 'Other'}
+                                    checked={() => donationAmount === 'Other'}
                                     onChange={() => setDonationAmount('Other')}
                                 /> Other
                             </label>
+                            {/* <input type="number" name="amount" /> */}
                         </div>
 
                         {donationAmount && (
